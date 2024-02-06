@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const cardBackgroundColor = '#F7EDCC';
-const textColor = '#000000';
+const textColor = '#2B241F';
 
 const CardContainer = styled.div`
     position: relative;
