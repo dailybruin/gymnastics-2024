@@ -7,6 +7,9 @@ import email from '../images/socials/email.svg'
 import styled from 'styled-components'
 import { mediaQueries } from '../shared/config';
 
+const backgroundColor = '#8BB8E8';
+const gradientColor = '#F7EDCC';
+
 
 const Container = styled.div`
 	background-color: black;
@@ -42,6 +45,7 @@ const Socials = styled.div`
 
 const Footer = () => {
     return (
+        //"linear-gradient(${ backgroundColor}, ${gradientColor })"
         <Container>
         <h1>DAILY BRUIN</h1>
         <Socials>

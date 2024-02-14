@@ -6,7 +6,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import card_image from './components/card_image.png'
 
-
 const TestGrid = styled.div`
     height: 400px;
     width: 400px;
@@ -29,13 +28,15 @@ function App() {
 
   const article_name = "This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title "
 
-
   return data && (
     <div className="App">
       <Header />
-      <TestGrid>
-        <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
-      </TestGrid>
+         <div style={{ backgroundColor: "#8BB8E8" }}>
+           <div class="box" ></div>
+            <TestGrid>
+              <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
+            </TestGrid>
+        </div>
       <Footer />
     </div>
   );
