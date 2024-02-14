@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Header />
          <div style={{ backgroundColor: "#8BB8E8" }}>
-           <div class="box" ></div>
+           <div class="topBox" ></div>
             <TestGrid>
               <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
             </TestGrid>

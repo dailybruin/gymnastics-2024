@@ -37,8 +37,15 @@
   }
 }
 
-.box {
+.topBox {
     height: 200px;
     width: 100%;
     background: linear-gradient(rgba(247, 237, 204, 1), transparent);
-}  
+}
+
+.bottomBox {
+    height: 200px;
+    width: 100%;
+    bottom: 0px;
+    background: linear-gradient(rgba(139, 184, 232, 1), rgba(247, 237, 204, 1));
+}

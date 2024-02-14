@@ -12,9 +12,9 @@ const gradientColor = '#F7EDCC';
 
 
 const Container = styled.div`
-	background-color: black;
+	background-color: ${backgroundColor};
 	height: auto;
-	color: white;
+	color: black;
 	padding: 60px 0 10px 0;
     text-align: center;
 	h1 {
@@ -46,7 +46,9 @@ const Socials = styled.div`
 const Footer = () => {
     return (
         //"linear-gradient(${ backgroundColor}, ${gradientColor })"
+        
         <Container>
+            <div class="bottomBox">    
         <h1>DAILY BRUIN</h1>
         <Socials>
           <a href="https://www.instagram.com/dailybruin" target="_blank"><img src={insta}/></a>
@@ -55,8 +57,10 @@ const Footer = () => {
           <a href="https://www.tiktok.com/@dailybruin" target="_blank"><img src={tiktok}/></a>
           <a href="http://eepurl.com/cFEiZX" target="_blank"><img src={email}/></a>
           <p>Built with Suzy’s ♥ in Kerckhoff 118 by [developers]. Designed by [designers].</p>
-        </Socials>
-    </Container>
+                </Socials>
+            </div>
+            </Container>
+   
     )
   }
   
