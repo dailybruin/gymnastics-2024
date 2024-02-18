@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from 'styled-components';
 import './App.css';
 import DesktopCard from "./components/DesktopCard";
+import PostcardsBlurb from "./components/PostcardsBlurb";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import card_image from './components/card_image.png'
@@ -33,6 +34,7 @@ function App() {
   return data && (
     <div className="App">
       <Header />
+      <PostcardsBlurb/>
       <TestGrid>
         <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
       </TestGrid>
