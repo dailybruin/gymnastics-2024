@@ -5,6 +5,7 @@ import DesktopCard from "./components/DesktopCard";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import card_image from './components/card_image.png'
+import ArticleGrid from "./components/ArticleGrid";
 
 
 const TestGrid = styled.div`
@@ -28,14 +29,15 @@ function App() {
   }, [])
 
   const article_name = "This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title "
-
+  const articles = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
   return data && (
     <div className="App">
-      <Header />
+      <Header/>
       <TestGrid>
         <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
       </TestGrid>
+      <ArticleGrid article={articles}/>
       <Footer />
     </div>
   );
