@@ -19,6 +19,7 @@ const Container = styled.div`
   margin: 0;
   font-family: 'ITC Century';
   font-size: 29px;
+  //font-size: 40px;
   font-weight: 400px;
   p {
     font-family: 'Montserrat', sans-serif;
