@@ -1,18 +1,18 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import DBLogo from '../images/DailyBruinLogo.svg'
-import { colors } from '../shared/config'
+import DBLogo from '../images/DailyBruinLogo.svg';
+import { colors } from '../shared/config';
 
-const DBHeader = styled("div")`
+const DBHeader = styled('div')`
   z-index: 2001;
 
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: black;
+  background: #f7edcc;
   width: 100%;
   padding: 0.2em 0;
-  color: white;
+  color: #2b241f;
   font-family: 'ITC Century';
   font-style: normal;
   font-weight: 400;
@@ -20,18 +20,21 @@ const DBHeader = styled("div")`
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21.6px;
-  /* border-bottom: 2px solid black; */
+  border-bottom: 1px solid #2b241f;
 `;
 
 const Header = () => {
   return (
     <DBHeader>
-      {/* Daily Bruin */}
-      <a href="https://dailybruin.com">
-        <img src={DBLogo} alt="Daily Bruin" />
+      <a
+        href="https://dailybruin.com"
+        target="_blank"
+        style={{ textDecoration: 'none', color: 'inherit' }}
+      >
+        Daily Bruin
       </a>
     </DBHeader>
-  )
-}
+  );
+};
 
 export default Header;
