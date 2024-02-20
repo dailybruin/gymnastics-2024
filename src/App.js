@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import card_image from './components/card_image.png'
 import ArticleGrid from "./components/ArticleGrid";
 import { isMobile } from 'react-device-detect';
+import Interactive from "./components/Interactive";
 
 
 const TestGrid = styled.div`
@@ -54,6 +55,7 @@ function App() {
     <div className="App">
       <Header />
       <PostcardsBlurb blurb_text={data.blurb[0].blurb_text}/>
+      <Interactive interactiveIMG={data.interactive}/>
       <ArticleGrid articles={data.articles}/>
       <Footer />
     </div>
