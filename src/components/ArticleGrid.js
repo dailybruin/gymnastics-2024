@@ -61,7 +61,6 @@ export default function ArticleGrid(props) {
                 : null}
                 </Grid>
             </Container>
-            <Bottom/>
         </>
         )
     }
@@ -79,7 +78,6 @@ export default function ArticleGrid(props) {
                     : null}
                     </Grid>
                 </Container>
-                <Bottom/>
             </>
         )
     }
