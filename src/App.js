@@ -32,32 +32,29 @@ function App() {
   }, [])
 
   const article_name = "This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title "
-  const articles = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-  if (isMobile)
-  {
-    return data && (
-      <div className="App">
-      <Header />
-      <TestGrid>
-        <MobileArticleCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
-      </TestGrid>
-      <Footer />
-    </div>
+  // if (isMobile)
+  // {
+  //   return data && (
+  //     <div className="App">
+  //     <Header />
+  //     <PostcardsBlurb blurb_text={data.blurb[0].blurb_text}/>
+  //     <ArticleGrid>
+  //       {/* <MobileArticleCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} /> */}
+  //     </ArticleGrid>
+  //     <Footer />
+  //   </div>
 
-    )
-  }
+  //   )
+  // }
 
 
   return data && (
     <div className="App">
       <Header />
-      <PostcardsBlurb/>
-      <TestGrid>
-      <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
-      </TestGrid>
-      <ArticleGrid article={articles}/>
+      <PostcardsBlurb blurb_text={data.blurb[0].blurb_text}/>
+      <ArticleGrid articles={data.articles}/>
       <Footer />
     </div>
   );

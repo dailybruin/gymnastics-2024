@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import DesktopCard from "./DesktopCard.jsx";
+import MobileArticleCard from './MobileArticleCard.jsx';
 import card_image from './card_image.png';
 import { mediaQueries } from '../shared/config';
+import { isMobile } from 'react-device-detect';
+
 
 
 const Gradient = styled.div`
@@ -39,19 +42,20 @@ const Grid = styled.div`
         align-items: center;
         column-gap: 2em;
         row-gap: 1em;
+        padding: 2em;
     }
 `
-const article_name = "This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title This is an article title "
 
 export default function ArticleGrid(props) {
-    return (
+    if(!isMobile){
+        return (
         <>
             <Gradient/>
             <Container>
                 <Grid>
-                {props && props.article ? props.article.map((item) => {
+                {props && props.articles ? props.articles.map((item) => {
                         return(
-                            <DesktopCard article_title={article_name} article_url="https://www.google.com" article_byline="BY JOE BRUIN" article_image={card_image} />
+                            <DesktopCard article_title={item.article_title} article_url={item.article_url} article_byline={item.article_byline} article_image={item.article_image} />
                         );
                     })
                 : null}
@@ -59,5 +63,24 @@ export default function ArticleGrid(props) {
             </Container>
             <Bottom/>
         </>
-    )
+        )
+    }
+    else{
+        return (
+            <>
+                <Gradient/>
+                <Container>
+                    <Grid>
+                    {props && props.articles ? props.articles.map((item) => {
+                            return(
+                                <MobileArticleCard article_title={item.article_title} article_url={item.article_url} article_byline={item.article_byline} article_image={item.article_image} />
+                            );
+                        })
+                    : null}
+                    </Grid>
+                </Container>
+                <Bottom/>
+            </>
+        )
+    }
 }
