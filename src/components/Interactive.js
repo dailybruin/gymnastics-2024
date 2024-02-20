@@ -43,10 +43,10 @@ const Interactive = (props) => {
                 <Title src={title} />
         </ImageContainer>
         <BG>
-                <img src={pic}></img>
+            <img src={props.interactive}></img>
         </BG>
         <BG>
-            <img src={props.interactiveIMG}></img>
+            <img src={props.interactive}></img>
         </BG>
         </>
 

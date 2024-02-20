@@ -57,7 +57,7 @@ function App() {
       <Header />
       <Landing data={data}></Landing>
       <PostcardsBlurb blurb_text={data.blurb[0].blurb_text}/>
-      <Interactive interactiveIMG={data.interactive}/>
+      <Interactive interactive={data.interactive[0].interactive}/>
       <ArticleGrid articles={data.articles}/>
       <Footer />
     </div>
