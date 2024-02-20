@@ -15,6 +15,7 @@ const ImageContainer = styled.div`
     border-style: solid;
     border-width: 40px; 
     border-color: #F7EDCC;
+    border-top-width: 20px; /* shrink to fit landing_credit above */
     z-index: -1;
     ${mediaQueries.mobile}{
         border-width: 12px;

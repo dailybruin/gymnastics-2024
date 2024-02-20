@@ -10,6 +10,7 @@ import card_image from './components/card_image.png'
 import ArticleGrid from "./components/ArticleGrid";
 import { isMobile } from 'react-device-detect';
 import Interactive from "./components/Interactive";
+import Landing from "./components/Landing"
 
 
 const TestGrid = styled.div`
@@ -54,6 +55,7 @@ function App() {
   return data && (
     <div className="App">
       <Header />
+      <Landing data={data}></Landing>
       <PostcardsBlurb blurb_text={data.blurb[0].blurb_text}/>
       <Interactive interactiveIMG={data.interactive}/>
       <ArticleGrid articles={data.articles}/>
