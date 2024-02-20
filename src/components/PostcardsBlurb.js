@@ -32,6 +32,7 @@ const Blurb = styled.div`
     top: -85px;
     ${mediaQueries.mobile}{
        top: -40px;
+       font-size: 10px;
     }
 `;
 
@@ -48,6 +49,9 @@ const OverlayText = styled.div`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    ${mediaQueries.mobile}{
+        width: 300px;
+     }
 `;
 const PostcardsBlurb = (props) => {
     return (
