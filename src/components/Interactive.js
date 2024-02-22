@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import title from '../images/Interactive.png';
+import title from '../images/Interactives.png';
 import pic from '../images/2021-Chevrolet-Silverado-Yenko-SC-front-three-quarter.png';
 import { mediaQueries } from '../shared/config'
 import gradient from '../images/Gradient.png'
@@ -38,11 +38,12 @@ const StyledImage = styled.img`
 
 
 const Title = styled.img`
-    top: 15px;
+    width: 50%;
     position: relative;
     z-index: 5; 
     ${mediaQueries.mobile}{
-        width: 339px;
+        top: 10px;
+        width: 250px;
     }
 `;
 
@@ -54,7 +55,6 @@ const Interactive = (props) => {
         </ImageContainer>
         <BG>
          <StyledImage src={props.interactive} alt="Interactive Content" />
-
         </BG>
         <BG>
         <StyledImage src={props.interactive} alt="Interactive Content" />

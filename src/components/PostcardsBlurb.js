@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import title from '../images/PostcardsFromThePac.png'
+import title from '../images/Postcards2.png'
 import yellowblurb from '../images/YellowBlurb.png'
 import gradient from '../images/Gradient.png'
 import { mediaQueries } from '../shared/config'
@@ -9,6 +9,7 @@ const Gradient = styled.img`
     margin-bottom: -5px;
 `;
 const ImageContainer = styled.div`
+    padding-top: 12%;
     background-color: #8BB8E8;
     width: 100%;
     box-sizing: border-box;
@@ -22,6 +23,7 @@ const ImageContainer = styled.div`
     }
 `;
 const Title = styled.img`
+    width: 60%;
     position: relative;
     z-index: 1; 
     ${mediaQueries.mobile}{
