@@ -4,11 +4,26 @@ import pic from '../images/2021-Chevrolet-Silverado-Yenko-SC-front-three-quarter
 import { mediaQueries } from '../shared/config'
 import gradient from '../images/Gradient.png'
 
-const BG = styled('div')`
+const BG1 = styled('div')`
     background-color: #F8EA41;
     height: 898px;
     border-color: black;
     border-top-style: solid;
+    border-bottom-style: none;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+`;
+const BG2 = styled('div')`
+    background-color: #F8EA41;
+    height: 898px;
+    border-color: black;
+    border-top-style: none;
     border-bottom-style: solid;
     position: relative;
     text-align: center;
@@ -31,7 +46,7 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled.img`
-    width: 100%; // Make image fill the container width
+    width: 80%; // Make image fill the container width
     height: auto; // Maintain aspect ratio
     object-fit: cover; // Cover the area, may crop the image
 `;
@@ -41,6 +56,7 @@ const Title = styled.img`
     width: 50%;
     position: relative;
     z-index: 5; 
+    top: 15px;
     ${mediaQueries.mobile}{
         top: 10px;
         width: 250px;
@@ -53,12 +69,12 @@ const Interactive = (props) => {
         <ImageContainer>
                 <Title src={title} />
         </ImageContainer>
-        <BG>
+        <BG1>
          <StyledImage src={props.interactive} alt="Interactive Content" />
-        </BG>
-        <BG>
+        </BG1>
+        <BG2>
         <StyledImage src={props.interactive} alt="Interactive Content" />
-        </BG>
+        </BG2>
         </>
 
     );
