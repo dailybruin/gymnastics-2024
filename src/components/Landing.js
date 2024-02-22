@@ -6,7 +6,6 @@ const Container = styled.div`
   width: 100%;
   height: fit-content;
   position: relative;
-  background: #D9D9D9;
   width: 1440px;
   height: 901px;
   position: relative;
@@ -17,6 +16,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   position: relative;
+  background: #F7EDCC;
 
 `;
 
