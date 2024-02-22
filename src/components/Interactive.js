@@ -16,16 +16,26 @@ const BG = styled('div')`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
 `;
 
 const ImageContainer = styled.div`
     background-color: #F7EDCC;
     width: 100%;
     z-index: -1;
+    object-fit: fill;
     ${mediaQueries.mobile}{
         border-width: 12px;
     }
 `;
+
+const StyledImage = styled.img`
+    width: 100%; // Make image fill the container width
+    height: auto; // Maintain aspect ratio
+    object-fit: cover; // Cover the area, may crop the image
+`;
+
 
 const Title = styled.img`
     top: 15px;
@@ -43,10 +53,11 @@ const Interactive = (props) => {
                 <Title src={title} />
         </ImageContainer>
         <BG>
-            <img src={props.interactive}></img>
+         <StyledImage src={props.interactive} alt="Interactive Content" />
+
         </BG>
         <BG>
-            <img src={props.interactive}></img>
+        <StyledImage src={props.interactive} alt="Interactive Content" />
         </BG>
         </>
 

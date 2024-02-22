@@ -6,7 +6,18 @@ const Container = styled.div`
   width: 100%;
   height: fit-content;
   position: relative;
-  background: #F7EDCC;
+  background: #D9D9D9;
+  width: 1440px;
+  height: 901px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
 `;
 
 const Image = styled.img`
@@ -22,7 +33,9 @@ const Credits = styled.div`
   line-height: 20px;
   letter-spacing: 0.05em;
   text-align: right;
+  padding-right: 15px;
   color: #9E7A45;
+  background-color: #F7EDCC;
 
 
 
@@ -33,9 +46,10 @@ const Credits = styled.div`
 
 export default function Landing(props) {
   return (
-    <Container>
-      <Image src={props.data.landing_image}></Image>
-      <Credits>{props.data.landing_credits}</Credits>
-    </Container>
+    <><Container>
+      {/* <Image src={props.data.landing_image}></Image> */}
+
+    </Container><Credits>{props.data.landing_credits}</Credits></>
+    
   );
 }

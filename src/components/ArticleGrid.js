@@ -8,26 +8,28 @@ import { isMobile } from 'react-device-detect';
 
 
 const Gradient = styled.div`
-    height: 387px;
+    height: 187px;
     background: linear-gradient(to top,  #8BB8E8, #F7EDCC);
 `
 const Bottom = styled.div`
-    height: 387px;
+    height: 0px;
     background: linear-gradient(to bottom,  #8BB8E8, #F7EDCC);
 `
 const Container = styled.div`
-    margin-right: auto;
+
     margin-left: auto;
     background-color: #8BB8E8;
     position: relative;
     height: auto;
+    margin-top: 0px;
 `
 /*
     flex-direction: column;
 */
 const Grid = styled.div`
+    margin-top: 0px;
     padding: 2%;
-    margin: auto;
+    margin-right: 20px; 
     display: grid;
     column-gap: 3em;
     row-gap: 3em;

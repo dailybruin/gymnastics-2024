@@ -67,7 +67,7 @@ const Footer = () => {
         <p>
           Built with Suzy&apos;s ♥ in Kerckhoff 118 by Annie Tran, Donny Rimer, Ed Nawrocki, Hameed
           Shaik, Katherine Li, Maria Martins, Marvin Deng, Michelle Kim, Nicole Ju, Rama Das,
-          Richelle Shim, Sakshi Thoutireddy, Yifan Tang, Yubo Zhang. Designed by Tyler Cho.
+          Richelle Shim, Sakshi Thoutireddy, Yifan Tang, Yubo Zhang. Designed by  Helen Quach.
         </p>
       </Socials>
     </Container>
