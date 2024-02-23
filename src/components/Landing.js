@@ -17,7 +17,6 @@ const Container = styled.div`
   width: 100%;
   position: relative;
   background: #F7EDCC;
-
 `;
 
 const Image = styled.img`
@@ -36,9 +35,6 @@ const Credits = styled.div`
   padding-right: 15px;
   color: #9E7A45;
   background-color: #F7EDCC;
-
-
-
   ${mediaQueries.mobile} {
     font-size: 8px;
   }

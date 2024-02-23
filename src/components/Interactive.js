@@ -6,10 +6,10 @@ import gradient from '../images/Gradient.png'
 
 const BG1 = styled('div')`
     background-color: #F8EA41;
-    height: 898px;
+    height: 798px;
     border-color: black;
     border-top-style: solid;
-    border-bottom-style: none;
+    border-bottom-style: solid;
     position: relative;
     text-align: center;
     margin: auto;
@@ -63,6 +63,23 @@ const Title = styled.img`
     }
 `;
 
+const Credits = styled.div`
+  font-family: Fjalla One;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: right;
+  padding-right: 15px;
+  color: #010c39;
+  background-color: #F8EA41;
+  height: 30px;
+  ${mediaQueries.mobile} {
+    font-size: 8px;
+  }
+`;
+
 const Interactive = (props) => {
     return (
         <>
@@ -70,10 +87,11 @@ const Interactive = (props) => {
                 <Title src={title} />
         </ImageContainer>
         <BG1>
-         <StyledImage src={props.interactive} alt="Interactive Content" />
+        <iframe src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/quiz/gymQuiz" width="100%" height="100%"></iframe>
         </BG1>
+        <Credits> Liam McGlynn, Assistant Data editor </Credits>
         <BG2>
-        <StyledImage src={props.interactive} alt="Interactive Content" />
+        <iframe src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/timeline/timeline" width="100%" height="100%"></iframe>
         </BG2>
         </>
 
