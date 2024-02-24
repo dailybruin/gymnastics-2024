@@ -9,7 +9,7 @@ const BG1 = styled('div')`
     height: 798px;
     border-color: black;
     border-top-style: solid;
-    border-bottom-style: solid;
+    border-bottom-style: none;
     position: relative;
     text-align: center;
     margin: auto;
@@ -24,7 +24,7 @@ const BG2 = styled('div')`
     height: 898px;
     border-color: black;
     border-top-style: none;
-    border-bottom-style: solid;
+    border-bottom-style: none;
     position: relative;
     text-align: center;
     margin: auto;
@@ -65,7 +65,7 @@ const Title = styled.img`
 
 const Credits = styled.div`
   font-family: Fjalla One;
-  border: 0px;
+  border: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -80,6 +80,28 @@ const Credits = styled.div`
   }
 `;
 
+const Credits2 = styled.div`
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-end; /* Align children to the end (bottom) */
+  align-items: flex-end; /* Align items to the right */
+  font-family: Fjalla One;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding-right: 15px;
+  color: #010c39;
+  background-color: #F6EA63;
+  height: 50px; /* Fixed height of the container */
+  border-color: black;
+  border-top-style: none;
+  border-bottom-style: solid;
+  ${mediaQueries.mobile} {
+    font-size: 8px;
+  }
+`;
+
 const Interactive = (props) => {
     return (
         <>
@@ -87,12 +109,23 @@ const Interactive = (props) => {
                 <Title src={title} />
         </ImageContainer>
         <BG1>
-        <iframe src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/quiz/gymQuiz" width="100%" height="100%"></iframe>
+        <iframe
+            src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/quiz/gymQuiz"
+            width="100%"
+            height="100%"
+            style={{ border: "none" }}  // Correct way to apply styles in JSX
+        ></iframe>
         </BG1>
         <Credits> Liam McGlynn, Assistant Data editor </Credits>
         <BG2>
-        <iframe src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/timeline/timeline" width="100%" height="100%"></iframe>
+        <iframe
+            src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/timeline/timeline"
+            width="100%"
+            height="100%"
+            style={{ border: "none" }}  // Correct way to apply styles in JSX
+        ></iframe>
         </BG2>
+        <Credits2> Junwon Choi, Data editor </Credits2>
         </>
 
     );
