@@ -17,7 +17,7 @@ const Container = styled.div`
   text-align: center;
   line-height: 20px;
   margin: 0;
-  font-family: 'ITC Century Std Book';
+  font-family: 'ITCCenturyStdBook';
   font-size: 29px;
   //font-size: 40px;
   font-weight: 400px;

@@ -13,7 +13,7 @@ const DBHeader = styled('div')`
   width: 100%;
   padding: 0.2em 0;
   color: #2b241f;
-  font-family: 'ITC Century';
+  font-family: 'ITCCenturyStdBook';
   font-style: normal;
   font-weight: 400;
   text-align: center;
