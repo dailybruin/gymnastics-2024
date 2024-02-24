@@ -5,9 +5,11 @@ import styled from 'styled-components';
 const cardBackgroundColor = '#F7EDCC';
 const textColor = '#2B241F';
 
+
 const CardContainer = styled.div`
     position: relative;
     width: 100%;
+    height: 100%;
     border: 10px solid ${cardBackgroundColor};
     overflow: hidden;
     background-color: ${cardBackgroundColor};
@@ -15,9 +17,10 @@ const CardContainer = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: auto;
+    height: 100:
     display: block;
     transition: opacity 0.3s ease-in-out;
+    
 `;
 
 const TextOverlay = styled.div`

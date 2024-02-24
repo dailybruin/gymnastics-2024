@@ -1,13 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
-
+import animation from "../images/chae.vault.animation.BJM.JC.gif"
 const Container = styled.div`
   width: 100%;
   height: fit-content;
-  position: relative;
-  width: 1440px;
-  height: 901px;
   position: relative;
   text-align: center;
   margin: auto;
@@ -43,7 +40,7 @@ const Credits = styled.div`
 export default function Landing(props) {
   return (
     <><Container>
-      {/* <Image src={props.data.landing_image}></Image> */}
+      { <Image src={animation}></Image> }
 
     </Container><Credits>{props.data.landing_credits}</Credits></>
     

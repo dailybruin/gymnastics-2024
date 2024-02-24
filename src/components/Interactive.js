@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import title from '../images/Interactives.png';
-import pic from '../images/2021-Chevrolet-Silverado-Yenko-SC-front-three-quarter.png';
 import { mediaQueries } from '../shared/config'
-import gradient from '../images/Gradient.png'
 
 const BG1 = styled('div')`
     background-color: #F8EA41;
