@@ -72,6 +72,7 @@ const Credits = styled.div`
   letter-spacing: 0.05em;
   text-align: right;
   padding-right: 15px;
+  padding-bottom: 15px;
   color: #010c39;
   background-color: #F8EA41;
   height: 30px;
@@ -91,6 +92,7 @@ const Credits2 = styled.div`
   line-height: 20px;
   letter-spacing: 0.05em;
   padding-right: 15px;
+  padding-bottom: 15px;
   color: #010c39;
   background-color: #F6EA63;
   height: 50px; /* Fixed height of the container */
@@ -101,6 +103,16 @@ const Credits2 = styled.div`
     font-size: 8px;
   }
 `;
+
+const InteractiveTitle = styled.div`
+font-family: Fjalla One;
+font-size: 30px;
+text-align: center;
+background-color: #F6EA63;
+padding-top: 5%;
+padding-bottom: 3%;
+`;
+
 
 const Interactive = (props) => {
     return (
@@ -117,6 +129,7 @@ const Interactive = (props) => {
         ></iframe>
         </BG1>
         <Credits> Liam McGlynn, Assistant Data editor </Credits>
+        <InteractiveTitle>A Decade of Pac-12 Rivalries</InteractiveTitle>
         <BG2>
         <iframe
             src="https://wp.dailybruin.com/wp-content/themes/caeruleum/js/interactives/sports.gymnastics.2024/timeline/timeline"
